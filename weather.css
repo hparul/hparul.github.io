@@ -1,0 +1,42 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section h1{
+    color: blue;
+    font-size: larger;
+    text-align: center;
+}
+section .centerDiv{
+    background: yellow;
+    margin: 20px;
+    padding: 20px;
+}
+button{
+    padding: 6px;
+    background-color:aliceblue;
+}
+.lowerDiv{
+    background-color: #7ff0ff;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+.lowerDiv span {
+font-size: 25px;
+color: teal;
+font-weight: bolder;
+}
+
+.lowerDiv #city{
+    font-size: 35px;
+    color: rgb(240, 8, 8);
+}
+#loading {
+    background-color: #7ff0ff;
+    display: none;
+    font-size: 25px;
+    color: teal;
+    font-weight: bolder;
+}

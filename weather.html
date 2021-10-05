@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="weather.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Show Weather </h1>
+      <div class="centerDiv">
+        <div class="details">
+          
+          <label for="">enter your city name</label>
+          <input type="text" id="name" /><br /><br />
+          <input type="checkbox" name="choice" value="no" id="useCurrentLocation">
+          <label for="choice-no">Use current location</label>
+        </div>
+        <div class="image">
+          <img
+            src="https://image.shutterstock.com/image-vector/weather-forecast-flat-composition-character-600w-1743942155.jpg"
+            alt="pictures of people"
+            width="400"
+            height="300"
+            id="imgdiv"
+          />
+        </div>
+        <br />
+        <button>click me</button>
+      </div>
+      </section>
+      
+      <div class="lowerDiv" id="lowerDiv">
+          <div>
+              <span id="city">city:</span><br />
+          </div>
+          <div>
+              <span id="temp">temp:</span><br />
+          </div>
+          
+          <div class="sun">
+            <div>
+                <img
+                  src="icons\icons/sunrise.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                  id="temperature"
+                /><br />
+            </div>
+            <div>
+                <span id="sunrise">sunrise:</span><br />
+                <span id="sunset">sunset:</span>
+            </div>
+          </div>
+          <div>
+            <img
+              src="icons\icons/wind.png"
+              height="100"
+              width="100"
+              alt=""
+              id="temperature"
+            /><br />
+            <span id="wind"></span>
+          </div>
+          <div>
+            <img
+              src="icons\icons/clouds.png"
+              height="100"
+              width="100"
+              alt=""
+              id="temperature"
+            /><br />
+            <span id="cloud"></span>
+          </div>
+          <div>
+            <img
+              src="icons\icons/weather.png"
+              height="100"
+              width="100"
+              alt=""
+              id="iconIdImg"
+            /><br />
+            <span id="icon"></span>
+          </div>
+      </div>
+      
+       <div id="loading"> 
+         <p>   Just a Moment. Weather details on way...</p>
+       </div>
+    
+    <script src="weather.js"></script>
+
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAREvKq6Tsw-gLK1ND-oNz1sI6zkd1_Z9Y&libraries=localContext&v=beta&callback=initMap">
+</script> 
+
+     
+
+  </body>
+</html>
