@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="game.css" />
+  </head>
+  <body>
+    <h1>fastest presser</h1>
+    <label for="game">choose the game run time:</label>
+    <input type="number" id="game" />
+    <button id="start">Start Game</button> <br /><br /><br />
+    <img
+      id="logo"
+      src="https://cdn5.vectorstock.com/i/1000x1000/20/29/games-store-logo-template-game-controller-icon-vector-8392029.jpg"
+      width="130px"
+      height="130px"
+    />
+
+    <main>
+      <div class="key-L">
+        <p>Press L</p>
+        <!--<canvas id="canvasL" width="500" height="300"></canvas>-->
+        <canvas id="canvasL" width="200" height="200"></canvas>
+      </div>
+
+      <div class="key-S">
+        <p>Press S</p>
+        <canvas id="canvasS" width="200" height="200"></canvas>
+      </div>
+
+      <div class="empty">Score: <span id="score-L"></span></div>
+      <div class="empty">Score: <span id="score-S"></span></div>
+      <div id="winner"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
