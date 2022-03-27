@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+ /*  text-align: center;
+  display: flex; */
+  background-color: yellow;
+  
+} 
+.App-header{
+  margin: 20px;
+  padding: 20px;
+}
+
+:root {
+  text-decoration: none;
+}
+.blackBorder {
+  border: 2px solid black;
+  padding: 6px;
+  width: 50%;
+}
+
+.strike-through {
+  text-decoration: none;
+}
